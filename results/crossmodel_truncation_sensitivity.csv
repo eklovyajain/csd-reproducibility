@@ -1,0 +1,7 @@
+model_pair,full_sample_pearson,no_truncation_pearson,pearson_difference,full_sample_spearman,no_truncation_spearman,spearman_difference
+MPNet vs MiniLM,0.722,0.7221,0.0001,0.6944,0.6905,-0.0039
+MPNet vs OpenAI Large,0.6269,0.6289,0.002,0.5993,0.6032,0.0038
+MPNet vs OpenAI Small,0.6955,0.693,-0.0025,0.6614,0.6579,-0.0034
+MiniLM vs OpenAI Large,0.6443,0.6544,0.01,0.6234,0.6298,0.0064
+MiniLM vs OpenAI Small,0.6912,0.69,-0.0012,0.6674,0.6612,-0.0062
+OpenAI Large vs OpenAI Small,0.8819,0.8853,0.0034,0.8711,0.8756,0.0044

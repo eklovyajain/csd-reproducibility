@@ -1,0 +1,11 @@
+# Tested with Python 3.11.5
+huggingface-hub==1.31.0
+matplotlib==3.11.2
+numpy==2.4.6
+openai==3.37.0  # only for re-embedding with the OpenAI models
+openpyxl==3.1.5
+pandas==3.0.6
+scipy==1.17.1
+sentence-transformers==6.0.1
+torch==2.14.0
+transformers==5.17.0

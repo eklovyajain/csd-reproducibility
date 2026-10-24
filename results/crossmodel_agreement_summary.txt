@@ -1,0 +1,101 @@
+Rows: 451 | models scored: 4 of 4
+  mpnet      = all-mpnet-base-v2 (dim 768, provider model e8c3b32edf5434bc2275fc9bab85f82640a19130)
+  MiniLM     = all-MiniLM-L6-v2 (dim 384, provider model 1110a243fdf4706b3f48f1d95db1a4f5529b4d41)
+  oai-large  = text-embedding-3-large (dim 3072, provider model ['text-embedding-3-large'])
+  oai-small  = text-embedding-3-small (dim 1536, provider model ['text-embedding-3-small'])
+
+Status counts by model:
+status      ok
+model         
+mpnet      451
+MiniLM     451
+oai-large  451
+oai-small  451
+
+Rows with status ok in every model: 451
+
+Per-model distribution of aligned_normalized:
+             mean     std     min     50%     max
+model                                            
+mpnet      0.4156  0.1459  0.0268  0.4155  0.8762
+MiniLM     0.4279  0.1556  0.0010  0.4298  0.8502
+oai-large  0.3961  0.1049  0.0765  0.3939  0.7082
+oai-small  0.4023  0.1083  0.0852  0.3994  0.7281
+
+aligned_normalized -- Pearson correlation matrix
+model      mpnet  MiniLM  oai-large  oai-small
+model                                         
+mpnet      1.000   0.722      0.627      0.695
+MiniLM     0.722   1.000      0.644      0.691
+oai-large  0.627   0.644      1.000      0.882
+oai-small  0.695   0.691      0.882      1.000
+  mean pairwise pearson: 0.710
+  lowest pair:  mpnet vs oai-large = 0.627
+  highest pair: oai-large vs oai-small = 0.882
+
+aligned_normalized -- Spearman correlation matrix
+model      mpnet  MiniLM  oai-large  oai-small
+model                                         
+mpnet      1.000   0.694      0.599      0.661
+MiniLM     0.694   1.000      0.623      0.667
+oai-large  0.599   0.623      1.000      0.871
+oai-small  0.661   0.667      0.871      1.000
+  mean pairwise spearman: 0.686
+  lowest pair:  mpnet vs oai-large = 0.599
+  highest pair: oai-large vs oai-small = 0.871
+
+(residual_normalized is complementary: aligned^2 + residual^2 = 1 within each model)
+
+residual_normalized -- Pearson correlation matrix
+model      mpnet  MiniLM  oai-large  oai-small
+model                                         
+mpnet      1.000   0.733      0.628      0.704
+MiniLM     0.733   1.000      0.678      0.734
+oai-large  0.628   0.678      1.000      0.888
+oai-small  0.704   0.734      0.888      1.000
+  mean pairwise pearson: 0.727
+  lowest pair:  mpnet vs oai-large = 0.628
+  highest pair: oai-large vs oai-small = 0.888
+
+residual_normalized -- Spearman correlation matrix
+model      mpnet  MiniLM  oai-large  oai-small
+model                                         
+mpnet      1.000   0.694      0.599      0.661
+MiniLM     0.694   1.000      0.623      0.667
+oai-large  0.599   0.623      1.000      0.871
+oai-small  0.661   0.667      0.871      1.000
+  mean pairwise spearman: 0.686
+  lowest pair:  mpnet vs oai-large = 0.599
+  highest pair: oai-large vs oai-small = 0.871
+
+Showcase rows across models (percentile = within-model rank of aligned_normalized):
+
+  row_id 222: Case 1 (strongly aligned)
+               aligned_normalized  residual_normalized  cos_IF  aligned_pctile
+    model                                                                     
+    mpnet                   0.648                0.761   0.748          95.787
+    MiniLM                  0.440                0.898   0.715          52.993
+    oai-large               0.363                0.932   0.738          38.803
+    oai-small               0.476                0.879   0.673          74.501
+
+  row_id 25: Case 2 (intermediate)
+               aligned_normalized  residual_normalized  cos_IF  aligned_pctile
+    model                                                                     
+    mpnet                   0.430                0.903   0.759          55.876
+    MiniLM                  0.465                0.885   0.704          60.310
+    oai-large               0.462                0.887   0.650          73.614
+    oai-small               0.409                0.913   0.681          54.102
+
+  row_id 13: Case 3 (strong residual)
+               aligned_normalized  residual_normalized  cos_IF  aligned_pctile
+    model                                                                     
+    mpnet                   0.056                0.998   0.770           1.109
+    MiniLM                  0.207                0.978   0.799           7.095
+    oai-large               0.167                0.986   0.692           1.330
+    oai-small               0.085                0.996   0.726           0.222
+
+Truncation / input-length checks:
+  mpnet      truncated 6 of 1353 texts (max_seq_length 384, longest text 602 tokens)
+  MiniLM     truncated 17 of 1353 texts (max_seq_length 256, longest text 602 tokens)
+  oai-large  input limit 8191 tokens; longest text 3069 UTF-8 bytes (an upper bound on tokens) -> no text can exceed the limit
+  oai-small  input limit 8191 tokens; longest text 3069 UTF-8 bytes (an upper bound on tokens) -> no text can exceed the limit

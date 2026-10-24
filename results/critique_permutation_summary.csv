@@ -1,0 +1,3 @@
+statistic,observed,permutation_mean,permutation_sd,observed_minus_permutation_mean,standardized_difference,permutation_p_value,n_permutations_at_least_observed,n_permutations,seed
+mean_aligned_normalized,0.41562561392772324,0.4040465697135735,0.003735474281916026,0.011579044214149736,3.0997520904388427,0.0,0,1000,20261024
+median_aligned_normalized,0.41554893538216003,0.40622949016626475,0.006103662061868007,0.009319445215895283,1.5268612713861645,0.058,58,1000,20261024

@@ -1,0 +1,2 @@
+total_participants,affected_participants,retained_participants,mpnet_truncated_texts,minilm_truncated_texts,critique_truncated_texts,affected_fields,maximum_change_in_pairwise_correlation_after_exclusion
+451,14,437,6,17,0,initial_reasoning; final_reasoning,0.01

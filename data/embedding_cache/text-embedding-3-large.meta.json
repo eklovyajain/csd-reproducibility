@@ -1,0 +1,23 @@
+{
+  "any_text_may_exceed_limit": false,
+  "embedding_settings": "embeddings.create defaults (full native dimensions)",
+  "first_run_utc": "2026-10-24T14:08:34+00:00",
+  "input_token_limit": 8191,
+  "last_run_utc": "2026-10-24T14:08:34+00:00",
+  "max_text_utf8_bytes": 3069,
+  "model_id": "text-embedding-3-large",
+  "n_cached_texts": 1353,
+  "numpy": "2.4.6",
+  "output_dimension": 3072,
+  "package": {
+    "openai": "3.37.0"
+  },
+  "provider": "openai",
+  "provider_reported_models": [
+    "text-embedding-3-large"
+  ],
+  "python": "3.11.5",
+  "usage_prompt_tokens": 115606,
+  "vector_norm_max": 1.0007624626159668,
+  "vector_norm_min": 0.9993977546691895
+}

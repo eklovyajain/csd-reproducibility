@@ -1,0 +1,22 @@
+{
+  "contents": "Fixed unrelated-text placebo set: the 50 texts in data/unrelated_placebo_texts.csv (10 domains x 5), keyed by SHA-256 of the UTF-8 text.",
+  "embedding_settings": "embedding.embed(): SentenceTransformer.encode defaults (no normalization, model's default max_seq_length)",
+  "hf_repo": "sentence-transformers/all-mpnet-base-v2",
+  "hf_snapshot_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+  "hf_snapshot_revision_note": "Not recorded when the cache was written; this is the only all-mpnet-base-v2 snapshot in the local Hugging Face cache and the revision recorded in all-mpnet-base-v2.meta.json for the participant texts.",
+  "model_id": "all-mpnet-base-v2",
+  "n_cached_texts": 50,
+  "numpy": "2.4.6",
+  "output_dimension": 768,
+  "package": {
+    "sentence-transformers": "6.0.1",
+    "torch": "2.14.0",
+    "transformers": "5.17.0"
+  },
+  "provider": "sentence-transformers",
+  "python": "3.11.5",
+  "vector_norm_max": 1.0,
+  "vector_norm_min": 0.9999999403953552,
+  "versions_note": "Package versions of the environment that wrote the cache (installed before the cache was created and unchanged since); recorded after the fact.",
+  "written_by": "unrelated_placebo_test.py (via embedding.embed())"
+}

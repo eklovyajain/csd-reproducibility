@@ -1,0 +1,42 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Local Claude Code settings
+.claude/
+
+# Office lock files
+~$*
+
+# Private raw participant data (never commit)
+data/ProlificData451.xlsx
+
+# Partial writes from an interrupted generate_crossmodel_embeddings.py run
+data/embedding_cache/*.tmp.npz

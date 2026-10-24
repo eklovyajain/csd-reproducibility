@@ -1,0 +1,23 @@
+{
+  "embedding_settings": "embedding.embed(): SentenceTransformer.encode defaults (no normalization, model's default max_seq_length)",
+  "first_run_utc": "2026-10-24T14:08:11+00:00",
+  "hf_repo": "sentence-transformers/all-MiniLM-L6-v2",
+  "hf_snapshot_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "last_run_utc": "2026-10-24T14:08:11+00:00",
+  "max_seq_length": 256,
+  "model_id": "all-MiniLM-L6-v2",
+  "n_cached_texts": 1353,
+  "numpy": "2.4.6",
+  "output_dimension": 384,
+  "package": {
+    "sentence-transformers": "6.0.1",
+    "torch": "2.14.0",
+    "transformers": "5.17.0"
+  },
+  "provider": "sentence-transformers",
+  "python": "3.11.5",
+  "texts_truncated": 17,
+  "token_count_max": 602,
+  "vector_norm_max": 1.0000001192092896,
+  "vector_norm_min": 0.9999998807907104
+}

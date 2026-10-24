@@ -1,0 +1,16 @@
+output,kind,max_absolute_difference,invariant_to_machine_precision,value
+aligned_signed,csd_decomposition,1.1102230246251565e-16,True,
+aligned_signed_normalized,csd_decomposition,1.1102230246251565e-16,True,
+aligned_raw,csd_decomposition,1.1102230246251565e-16,True,
+residual_raw,csd_decomposition,1.1102230246251565e-16,True,
+revision_magnitude,csd_decomposition,2.220446049250313e-16,True,
+aligned_normalized,csd_decomposition,1.1102230246251565e-16,True,
+residual_normalized,csd_decomposition,2.220446049250313e-16,True,
+cos_IF,raw_embedding_cosine_diagnostic (not expected to be invariant),0.6001841506861747,,
+cos_IC,raw_embedding_cosine_diagnostic (not expected to be invariant),0.7025598992710664,,
+cos_CF,raw_embedding_cosine_diagnostic (not expected to be invariant),0.665885849336891,,
+meta:sample_n,metadata,,,100
+meta:seed,metadata,,,20261024
+meta:all_statuses_ok_before_and_after,metadata,,,True
+meta:mean_shift_norm,metadata,,,27.585213827122857
+meta:mean_embedding_norm,metadata,,,0.9999999967089817

@@ -1,0 +1,23 @@
+quantity,n,value
+"pearson_r(reference_magnitude, aligned_normalized)",451,0.2774967618966988
+"spearman_rho(reference_magnitude, aligned_normalized)",451,0.25372904525505424
+"pearson_r(reference_magnitude, residual_normalized)",451,-0.25242945539026396
+"spearman_rho(reference_magnitude, residual_normalized)",451,-0.25372904525505424
+"pearson_r(reference_magnitude, revision_magnitude)",451,0.25655017195206226
+aligned_normalized_n:bottom_5pct_reference,23,23.0
+aligned_normalized_mean:bottom_5pct_reference,23,0.3350800559224281
+aligned_normalized_sd:bottom_5pct_reference,23,0.13323836968642563
+aligned_normalized_min:bottom_5pct_reference,23,0.04888922577500927
+aligned_normalized_p25:bottom_5pct_reference,23,0.2502326974747704
+aligned_normalized_median:bottom_5pct_reference,23,0.32815677419392214
+aligned_normalized_p75:bottom_5pct_reference,23,0.4154747921980223
+aligned_normalized_max:bottom_5pct_reference,23,0.6049331482006884
+aligned_normalized_n:remaining_95pct_reference,428,428.0
+aligned_normalized_mean:remaining_95pct_reference,428,0.41995399671772743
+aligned_normalized_sd:remaining_95pct_reference,428,0.14543011985450494
+aligned_normalized_min:remaining_95pct_reference,428,0.026759059081835367
+aligned_normalized_p25:remaining_95pct_reference,428,0.323278384583382
+aligned_normalized_median:remaining_95pct_reference,428,0.4168035969958189
+aligned_normalized_p75:remaining_95pct_reference,428,0.5229191014779874
+aligned_normalized_max:remaining_95pct_reference,428,0.8761726964339571
+reference_cutoff_p5 (bottom group is <= cutoff),23,0.7372311504125965
