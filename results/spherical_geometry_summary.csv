@@ -1,0 +1,159 @@
+section,quantity,model,measure,n,value,note
+embedding_norms,min_norm,all-mpnet-base-v2,,1353,0.999999894929208,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,max_norm,all-mpnet-base-v2,,1353,1.0000000823072457,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,mean_norm,all-mpnet-base-v2,,1353,0.9999999988494633,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,sd_norm,all-mpnet-base-v2,,1353,3.252273190787034e-08,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,max_abs_deviation_from_1,all-mpnet-base-v2,,1353,1.0507079195587465e-07,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,effectively_unit_normalized,all-mpnet-base-v2,,1353,1.0,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,min_norm,all-MiniLM-L6-v2,,1353,0.9999999027574403,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,max_norm,all-MiniLM-L6-v2,,1353,1.000000089090173,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,mean_norm,all-MiniLM-L6-v2,,1353,0.9999999984890531,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,sd_norm,all-MiniLM-L6-v2,,1353,3.521152760815021e-08,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,max_abs_deviation_from_1,all-MiniLM-L6-v2,,1353,9.724255967125117e-08,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,effectively_unit_normalized,all-MiniLM-L6-v2,,1353,1.0,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,min_norm,text-embedding-3-large,,1353,0.9993977630701284,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,max_norm,text-embedding-3-large,,1353,1.0007624028973081,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,mean_norm,text-embedding-3-large,,1353,1.000017219454526,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,sd_norm,text-embedding-3-large,,1353,0.000231031771437273,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,max_abs_deviation_from_1,text-embedding-3-large,,1353,0.0007624028973081121,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,effectively_unit_normalized,text-embedding-3-large,,1353,0.0,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+openai_normalization_sensitivity,max_abs_difference_raw_vs_normalized,text-embedding-3-large,tangent,451,1.559506419043788e-06,"|cos(psi)| from raw cached vectors vs after L2-normalizing I, C, F"
+openai_normalization_sensitivity,pearson_r_raw_vs_normalized,text-embedding-3-large,tangent,451,0.9999999999981517,"|cos(psi)| from raw cached vectors vs after L2-normalizing I, C, F"
+openai_normalization_sensitivity,spearman_rho_raw_vs_normalized,text-embedding-3-large,tangent,451,0.9999999999999998,"|cos(psi)| from raw cached vectors vs after L2-normalizing I, C, F"
+embedding_norms,min_norm,text-embedding-3-small,,1353,0.9993624951612872,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,max_norm,text-embedding-3-small,,1353,1.0007188233893556,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,mean_norm,text-embedding-3-small,,1353,1.0000095074264024,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,sd_norm,text-embedding-3-small,,1353,0.00028335139318654516,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,max_abs_deviation_from_1,text-embedding-3-small,,1353,0.0007188233893555829,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+embedding_norms,effectively_unit_normalized,text-embedding-3-small,,1353,0.0,"I, C, F vectors; unit if max |norm - 1| < 1e-06"
+openai_normalization_sensitivity,max_abs_difference_raw_vs_normalized,text-embedding-3-small,tangent,451,1.896276674295816e-06,"|cos(psi)| from raw cached vectors vs after L2-normalizing I, C, F"
+openai_normalization_sensitivity,pearson_r_raw_vs_normalized,text-embedding-3-small,tangent,451,0.9999999999983559,"|cos(psi)| from raw cached vectors vs after L2-normalizing I, C, F"
+openai_normalization_sensitivity,spearman_rho_raw_vs_normalized,text-embedding-3-small,tangent,451,0.9999999999999998,"|cos(psi)| from raw cached vectors vs after L2-normalizing I, C, F"
+unit_sphere_identity,"max_abs_difference(M, sqrt(2 - 2 cos_IF))",all-mpnet-base-v2,,451,6.74723261706589e-08,
+unit_sphere_identity,"max_abs_difference(M^2, 2 - 2 cos_IF)",all-mpnet-base-v2,,451,1.4853717344998074e-07,
+unit_sphere_identity,"spearman_rho(M, cos_IF)",all-mpnet-base-v2,,451,-0.9999999999999998,
+spherical_decomposition,max_abs_reconstruction_error,all-mpnet-base-v2,,451,1.469309511004102e-07,"cos(theta) vs M*K/4 + sqrt(1-M^2/4) sqrt(1-K^2/4) cos(psi), cos(psi) from tangent vectors"
+spherical_decomposition,mean_abs_reconstruction_error,all-mpnet-base-v2,,451,2.1047480954428864e-08,"cos(theta) vs M*K/4 + sqrt(1-M^2/4) sqrt(1-K^2/4) cos(psi), cos(psi) from tangent vectors"
+spherical_decomposition,n_cos_psi_outside_unit_interval,all-mpnet-base-v2,,451,0.0,"cos(theta) vs M*K/4 + sqrt(1-M^2/4) sqrt(1-K^2/4) cos(psi), cos(psi) from tangent vectors"
+spherical_decomposition,curvature_mean,all-mpnet-base-v2,,451,0.18031072350033223,
+spherical_decomposition,curvature_sd,all-mpnet-base-v2,,451,0.04838441762089881,
+spherical_decomposition,curvature_median,all-mpnet-base-v2,,451,0.17921184655009645,
+spherical_decomposition,curvature_min,all-mpnet-base-v2,,451,0.017376297334990812,
+spherical_decomposition,curvature_max,all-mpnet-base-v2,,451,0.32678559751442676,
+spherical_decomposition,K_mean,all-mpnet-base-v2,,451,0.9559934298746104,
+spherical_decomposition,K_sd,all-mpnet-base-v2,,451,0.11674047030128111,
+spherical_decomposition,K_median,all-mpnet-base-v2,,451,0.9698911676604971,
+spherical_decomposition,K_min,all-mpnet-base-v2,,451,0.6015923339333998,
+spherical_decomposition,K_max,all-mpnet-base-v2,,451,1.201327884790604,
+spherical_decomposition,scale_mean,all-mpnet-base-v2,,451,0.8086855750841632,
+spherical_decomposition,scale_sd,all-mpnet-base-v2,,451,0.045336254748038964,
+spherical_decomposition,scale_median,all-mpnet-base-v2,,451,0.8103210922747552,
+spherical_decomposition,scale_min,all-mpnet-base-v2,,451,0.6566345103648481,
+spherical_decomposition,scale_max,all-mpnet-base-v2,,451,0.9415633301986152,
+spherical_decomposition,cos_psi_mean,all-mpnet-base-v2,,451,0.2930419226026289,
+spherical_decomposition,cos_psi_sd,all-mpnet-base-v2,,451,0.16269808204678743,
+spherical_decomposition,cos_psi_median,all-mpnet-base-v2,,451,0.2852611109309368,
+spherical_decomposition,cos_psi_min,all-mpnet-base-v2,,451,-0.26366656255298965,
+spherical_decomposition,cos_psi_max,all-mpnet-base-v2,,451,0.829487331198464,
+spherical_decomposition,abs_cos_psi_mean,all-mpnet-base-v2,,451,0.2980137214249903,
+spherical_decomposition,abs_cos_psi_sd,all-mpnet-base-v2,,451,0.15338033088658007,
+spherical_decomposition,abs_cos_psi_median,all-mpnet-base-v2,,451,0.2852611109309368,
+spherical_decomposition,abs_cos_psi_min,all-mpnet-base-v2,,451,0.0005744812101903026,
+spherical_decomposition,abs_cos_psi_max,all-mpnet-base-v2,,451,0.829487331198464,
+spherical_decomposition,"pearson_r(aligned_normalized, abs_cos_psi)",all-mpnet-base-v2,,451,0.9538108312348188,
+spherical_decomposition,"pearson_p(aligned_normalized, abs_cos_psi)",all-mpnet-base-v2,,451,1.2257570754934985e-236,
+spherical_decomposition,"spearman_rho(aligned_normalized, abs_cos_psi)",all-mpnet-base-v2,,451,0.9649023801581537,
+spherical_decomposition,"spearman_p(aligned_normalized, abs_cos_psi)",all-mpnet-base-v2,,451,7.259489121482342e-263,
+signed_negative_counts,n_cos_theta_negative,all-mpnet-base-v2,chord,451,2.0,
+signed_negative_counts,n_cos_psi_negative,all-mpnet-base-v2,tangent,451,14.0,
+same_task_specificity,actual_mean,all-mpnet-base-v2,chord,451,0.41562561392772324,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,same_task_wrong_mean,all-mpnet-base-v2,chord,451,0.40387551538406496,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_mean,all-mpnet-base-v2,chord,451,0.01175009854365836,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_sd,all-mpnet-base-v2,chord,451,0.09609876566784736,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_median,all-mpnet-base-v2,chord,451,0.009771024687327268,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_min,all-mpnet-base-v2,chord,451,-0.25808660050480947,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_max,all-mpnet-base-v2,chord,451,0.3207089167477257,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_standardized_effect,all-mpnet-base-v2,chord,451,0.12227106625147525,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,pct_actual_gt_same_task_wrong_mean,all-mpnet-base-v2,chord,451,54.767184035476724,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_r(specificity, M)",all-mpnet-base-v2,chord,451,0.03443253046109855,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_p(specificity, M)",all-mpnet-base-v2,chord,451,0.46574330407732195,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_r_95ci_low(specificity, M)",all-mpnet-base-v2,chord,451,-0.05808798010388786,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_r_95ci_high(specificity, M)",all-mpnet-base-v2,chord,451,0.12636659422849955,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_rho(specificity, M)",all-mpnet-base-v2,chord,451,0.05274244713484945,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_p(specificity, M)",all-mpnet-base-v2,chord,451,0.2636744527447741,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_r(actual, M)",all-mpnet-base-v2,chord,451,0.4902136957778165,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_p(actual, M)",all-mpnet-base-v2,chord,451,1.2165755497069036e-28,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_rho(actual, M)",all-mpnet-base-v2,chord,451,0.494406137786237,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_p(actual, M)",all-mpnet-base-v2,chord,451,3.5503945281177445e-29,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_r(same_task_wrong_mean, M)",all-mpnet-base-v2,chord,451,0.6275946496416716,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_p(same_task_wrong_mean, M)",all-mpnet-base-v2,chord,451,9.154454619314605e-51,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_rho(same_task_wrong_mean, M)",all-mpnet-base-v2,chord,451,0.6163009765254529,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_p(same_task_wrong_mean, M)",all-mpnet-base-v2,chord,451,1.597263059011961e-48,specificity = actual minus mean over the other 450 critiques
+unrelated_placebo,actual_mean,all-mpnet-base-v2,chord,451,0.41562561392772324,unrelated = mean over the 50 unrelated texts
+unrelated_placebo,same_task_wrong_mean,all-mpnet-base-v2,chord,451,0.40387551538406496,unrelated = mean over the 50 unrelated texts
+unrelated_placebo,unrelated_mean,all-mpnet-base-v2,chord,451,0.26035407489597345,unrelated = mean over the 50 unrelated texts
+unrelated_placebo,actual_minus_unrelated_mean,all-mpnet-base-v2,chord,451,0.15527153903174987,unrelated = mean over the 50 unrelated texts
+unrelated_placebo,actual_minus_unrelated_standardized_effect,all-mpnet-base-v2,chord,451,1.1746780202618785,unrelated = mean over the 50 unrelated texts
+unrelated_placebo,pct_actual_gt_unrelated_mean,all-mpnet-base-v2,chord,451,87.58314855875831,unrelated = mean over the 50 unrelated texts
+same_task_specificity,actual_mean,all-mpnet-base-v2,tangent,451,0.2980137214249903,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,same_task_wrong_mean,all-mpnet-base-v2,tangent,451,0.2773697146017404,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_mean,all-mpnet-base-v2,tangent,451,0.02064400682324986,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_sd,all-mpnet-base-v2,tangent,451,0.11357991290377051,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_median,all-mpnet-base-v2,tangent,451,0.01896380122248356,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_min,all-mpnet-base-v2,tangent,451,-0.3207020826759349,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_max,all-mpnet-base-v2,tangent,451,0.4005010722839154,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,specificity_standardized_effect,all-mpnet-base-v2,tangent,451,0.18175755109744007,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,pct_actual_gt_same_task_wrong_mean,all-mpnet-base-v2,tangent,451,56.54101995565411,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_r(specificity, M)",all-mpnet-base-v2,tangent,451,0.06290512268038224,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_p(specificity, M)",all-mpnet-base-v2,tangent,451,0.1823629682509266,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_r_95ci_low(specificity, M)",all-mpnet-base-v2,tangent,451,-0.029602649432255986,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_r_95ci_high(specificity, M)",all-mpnet-base-v2,tangent,451,0.15434445704522648,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_rho(specificity, M)",all-mpnet-base-v2,tangent,451,0.07713478405902319,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_p(specificity, M)",all-mpnet-base-v2,tangent,451,0.10184270670167361,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_r(actual, M)",all-mpnet-base-v2,tangent,451,0.2995675404663905,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_p(actual, M)",all-mpnet-base-v2,tangent,451,8.363274219178093e-11,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_rho(actual, M)",all-mpnet-base-v2,tangent,451,0.3042466102858936,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_p(actual, M)",all-mpnet-base-v2,tangent,451,4.100629933161928e-11,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_r(same_task_wrong_mean, M)",all-mpnet-base-v2,tangent,451,0.37736850985260706,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"pearson_p(same_task_wrong_mean, M)",all-mpnet-base-v2,tangent,451,1.0347319778244827e-16,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_rho(same_task_wrong_mean, M)",all-mpnet-base-v2,tangent,451,0.38508028700560526,specificity = actual minus mean over the other 450 critiques
+same_task_specificity,"spearman_p(same_task_wrong_mean, M)",all-mpnet-base-v2,tangent,451,2.1653008094140558e-17,specificity = actual minus mean over the other 450 critiques
+unrelated_placebo,actual_mean,all-mpnet-base-v2,tangent,451,0.2980137214249903,unrelated = mean over the 50 unrelated texts
+unrelated_placebo,same_task_wrong_mean,all-mpnet-base-v2,tangent,451,0.2773697146017404,unrelated = mean over the 50 unrelated texts
+unrelated_placebo,unrelated_mean,all-mpnet-base-v2,tangent,451,0.042876113116290325,unrelated = mean over the 50 unrelated texts
+unrelated_placebo,actual_minus_unrelated_mean,all-mpnet-base-v2,tangent,451,0.25513760830869997,unrelated = mean over the 50 unrelated texts
+unrelated_placebo,actual_minus_unrelated_standardized_effect,all-mpnet-base-v2,tangent,451,1.6722656895481522,unrelated = mean over the 50 unrelated texts
+unrelated_placebo,pct_actual_gt_unrelated_mean,all-mpnet-base-v2,tangent,451,96.45232815964523,unrelated = mean over the 50 unrelated texts
+unrelated_decomposition,K_mean,all-mpnet-base-v2,,22550,1.4375445933229098,all participant x unrelated-text pairs
+unrelated_decomposition,curvature_mean,all-mpnet-base-v2,,22550,0.26934801271708647,all participant x unrelated-text pairs
+unrelated_decomposition,scale_mean,all-mpnet-base-v2,,22550,0.6414364573834023,all participant x unrelated-text pairs
+unrelated_decomposition,cos_psi_mean,all-mpnet-base-v2,,22550,-0.014101675291314023,all participant x unrelated-text pairs
+unrelated_decomposition,abs_cos_psi_mean,all-mpnet-base-v2,,22550,0.042876113116290325,all participant x unrelated-text pairs
+unrelated_decomposition,scaled_heading_mean,all-mpnet-base-v2,,22550,-0.008995447328492884,all participant x unrelated-text pairs
+unrelated_decomposition,cos_theta_mean,all-mpnet-base-v2,,22550,0.260352567894364,all participant x unrelated-text pairs
+unrelated_decomposition,curvature_plus_scaled_heading_mean,all-mpnet-base-v2,,22550,0.2603525653885936,all participant x unrelated-text pairs
+unrelated_decomposition,curvature_plus_scaled_heading_minus_cos_theta_mean,all-mpnet-base-v2,,22550,-2.505770424487963e-09,all participant x unrelated-text pairs
+unrelated_decomposition,pct_cos_theta_positive,all-mpnet-base-v2,,22550,99.99556541019956,all participant x unrelated-text pairs
+unrelated_decomposition,n_cos_theta_negative,all-mpnet-base-v2,,22550,1.0,all participant x unrelated-text pairs
+unrelated_decomposition,pct_cos_psi_positive,all-mpnet-base-v2,,22550,38.69623059866962,all participant x unrelated-text pairs
+unrelated_decomposition,random_direction_expected_abs_cos(dim=767),all-mpnet-base-v2,,0,0.028819333695963824,"analytic, not empirical: E|cos| for a uniformly random direction in the tangent space at I"
+crossmodel_agreement,pearson_min_pairwise,all four,tangent,451,0.5986375476682292,
+crossmodel_agreement,pearson_max_pairwise,all four,tangent,451,0.8782951322278569,
+crossmodel_agreement,pearson_mean_pairwise,all four,tangent,451,0.6996152482993688,
+crossmodel_agreement,spearman_min_pairwise,all four,tangent,451,0.571868348932886,
+crossmodel_agreement,spearman_max_pairwise,all four,tangent,451,0.8664984400447383,
+crossmodel_agreement,spearman_mean_pairwise,all four,tangent,451,0.6717849769004528,
+crossmodel_agreement,pearson_min_pairwise,all four,chord,451,0.6269051365937273,
+crossmodel_agreement,pearson_max_pairwise,all four,chord,451,0.8819181098149047,
+crossmodel_agreement,pearson_mean_pairwise,all four,chord,451,0.7103055595549982,
+crossmodel_agreement,spearman_min_pairwise,all four,chord,451,0.5993337650190661,
+crossmodel_agreement,spearman_max_pairwise,all four,chord,451,0.8711369686504589,
+crossmodel_agreement,spearman_mean_pairwise,all four,chord,451,0.686180191729512,
+tangent_vs_chord_within_model,pearson_r,all-mpnet-base-v2,abs_cos_psi vs aligned_normalized,451,0.9538108312348188,
+tangent_vs_chord_within_model,spearman_rho,all-mpnet-base-v2,abs_cos_psi vs aligned_normalized,451,0.9649023801581537,
+tangent_vs_chord_within_model,pearson_r,all-MiniLM-L6-v2,abs_cos_psi vs aligned_normalized,451,0.9652543012714223,
+tangent_vs_chord_within_model,spearman_rho,all-MiniLM-L6-v2,abs_cos_psi vs aligned_normalized,451,0.9693224496203127,
+tangent_vs_chord_within_model,pearson_r,text-embedding-3-large,abs_cos_psi vs aligned_normalized,451,0.9651504680875344,
+tangent_vs_chord_within_model,spearman_rho,text-embedding-3-large,abs_cos_psi vs aligned_normalized,451,0.9641118720117208,
+tangent_vs_chord_within_model,pearson_r,text-embedding-3-small,abs_cos_psi vs aligned_normalized,451,0.9659316910712163,
+tangent_vs_chord_within_model,spearman_rho,text-embedding-3-small,abs_cos_psi vs aligned_normalized,451,0.968466403730811,

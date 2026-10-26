@@ -25,6 +25,7 @@ agreement with, acceptance of, or uptake of the input.
 | Unrelated-text placebo | `unrelated_placebo_test.py`, `data/unrelated_placebo_texts.csv` |
 | Translation-invariance check | `validation_checks.py` |
 | Near-degenerate diagnostics | `small_revision_diagnostic.py`, `small_reference_diagnostic.py` |
+| Unit-sphere and tangent-plane diagnostics | `spherical_geometry_diagnostics.py` |
 | Saved outputs | `results/`, `figures/` |
 
 ## Data
