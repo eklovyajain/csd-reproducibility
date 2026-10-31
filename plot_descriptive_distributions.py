@@ -37,7 +37,7 @@ PERCENTILES = [1, 5, 10, 25, 50, 75, 90, 95, 99]
 KDE_COLOR = "#0b2e5c"
 
 FIGURES = [
-    ("aligned_normalized", "Normalized aligned CSD", "Distribution of Normalized Aligned CSD",
+    ("aligned_normalized", "Normalized aligned CSD", None,
      "aligned_normalized_distribution", (0.0, 1.0), "upper right"),
     ("revision_magnitude", r"Revision magnitude $\Vert F - I \Vert$", "Distribution of Revision Magnitude",
      "revision_magnitude_distribution", None, "upper left"),
@@ -71,8 +71,9 @@ def plot(x, xlabel, title, stem, xlim, legend_loc):
     ax.grid(axis="y", color=GRID, linewidth=0.6)
     ax.set_axisbelow(True)
     ax.legend(frameon=False, fontsize=8, loc=legend_loc, labelcolor=INK_SECONDARY)
-    ax.set_title(f"{title}\nN = {len(x)} participants, all-mpnet-base-v2",
-                 fontsize=10, loc="left")
+    if title:
+        ax.set_title(f"{title}\nN = {len(x)} participants, all-mpnet-base-v2",
+                     fontsize=10, loc="left")
     save(fig, stem)
 
 
