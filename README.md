@@ -3,8 +3,8 @@
 Conceptual Shift Decomposition (CSD) describes how reasoning is revised after
 an external input such as a critique. Given sentence embeddings of initial
 reasoning `I`, an external input `C`, and revised reasoning `F`, CSD
-decomposes the revision direction `F - I` relative to the reference direction
-`C - I` into an aligned component (along the reference direction) and a
+decomposes the revision direction `F - I` relative to the reference axis
+`C - I` into an aligned component (along the reference axis) and a
 residual component (perpendicular to it). The primary focal measure is the
 normalized aligned orientation, `aligned_normalized`, in [0, 1]. These are
 geometric descriptions of the direction of revision; they are not measures of
@@ -62,7 +62,7 @@ With `d = F - I` and `ĉ = (C - I) / ‖C - I‖`:
 
 | Key | Definition |
 |---|---|
-| `aligned_signed` | `d · ĉ`, signed projection onto the reference direction |
+| `aligned_signed` | `d · ĉ`, signed projection onto the reference axis |
 | `aligned_signed_normalized` | `(d · ĉ) / ‖d‖`, in [-1, 1] |
 | `aligned_raw` | `\|d · ĉ\|` |
 | `residual_raw` | `‖d - (d · ĉ)ĉ‖` |

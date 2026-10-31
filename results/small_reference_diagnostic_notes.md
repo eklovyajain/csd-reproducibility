@@ -1,4 +1,4 @@
-# Small-Reference Boundary Diagnostic (internal)
+# Small-Reference Boundary Diagnostic
 
 Data: deidentified N = 451, all-mpnet-base-v2 (existing cache, no new embeddings), canonical
 `csd_decompose`. All 451 statuses `ok`. reference_magnitude = ||C − I||.
@@ -42,17 +42,3 @@ shouldn't be read as independent. The figures are descriptive only, with no test
 No. In this sample, no reference is near zero, the smallest cases contain distinct critiques,
 and orientation in the low tail is not extreme. A threshold drawn from these data would remove
 interpretable cases.
-
-**E. Recommended appendix language**
-The preferred language is supported as written:
-
-> "CSD requires the critique to define a nonzero semantic direction relative to the initial
-> reasoning. When C = I, the reference axis is undefined; when ||C − I|| is very small, the
-> resulting orientation should be interpreted cautiously. In the present sample, the
-> smallest-reference cases were inspected to assess whether this boundary condition was
-> practically consequential."
-
-Optional addition, if the appendix should report the outcome:
-
-> "It was not: the smallest observed reference magnitude was 0.60, and the smallest-reference
-> critiques each challenged a specific premise of the initial reasoning."

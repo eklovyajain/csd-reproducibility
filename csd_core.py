@@ -5,13 +5,13 @@ Mathematical core of Conceptual Shift Decomposition (CSD).
 
 CSD decomposes how reasoning was revised after an external input (here, a
 critique) into two orthogonal components, measured relative to the
-conceptual reference direction defined by initial reasoning I and external
+reference axis defined by initial reasoning I and external
 input C:
 
   - aligned component: the part of the revision movement that lies *along*
-    the reference direction from I toward C
+    the reference axis from I toward C
   - residual (perpendicular) component: the part of the revision movement
-    that lies *perpendicular* to that reference direction
+    that lies *perpendicular* to that reference axis
 
 These are geometric descriptions of revision movement, not measures of
 agreement with, acceptance of, or compliance with the input.
@@ -52,12 +52,12 @@ def csd_decompose(I, C, F):
                              between I and F.
       c  = C - I            the *reference vector*: the direction from the
                              initial decision toward the external input.
-      c_hat = c / ||c||     the unit *conceptual reference direction*.
+      c_hat = c / ||c||     the unit vector along the *reference axis*.
 
     We then decompose d into a component parallel to c_hat and a component
     perpendicular to it:
 
-      d_parallel      = (d . c_hat) c_hat      <- projection onto reference direction
+      d_parallel      = (d . c_hat) c_hat      <- projection onto reference axis
       d_perpendicular = d - d_parallel         <- everything else
 
     Returns
@@ -65,7 +65,7 @@ def csd_decompose(I, C, F):
     dict with keys:
       aligned_signed            = d . c_hat
                                   Signed projection of the revision onto the
-                                  reference direction. Positive means the
+                                  reference axis. Positive means the
                                   same sign as C - I; negative means the
                                   opposite sign along the same direction.
       aligned_signed_normalized = (d . c_hat) / ||d||
@@ -106,7 +106,7 @@ def csd_decompose(I, C, F):
     - If ||c|| == 0 (C == I, the external input coincides with the initial
       decision) and the decision did change: status is
       "reference_undefined". There is no direction to project onto, so every
-      quantity that requires the reference direction is nan;
+      quantity that requires the reference axis is nan;
       revision_magnitude is still reported.
     - Cosine similarities are always computed from I, C, F directly; one is
       nan only if a vector in its pair is itself the zero vector (cosine
@@ -143,7 +143,7 @@ def csd_decompose(I, C, F):
             "status": "no_revision",
         }
 
-    # Edge case: reference direction undefined (input == initial decision).
+    # Edge case: reference axis undefined (input == initial decision).
     if norm_critique == 0.0:
         return {
             "aligned_signed": nan,
@@ -182,32 +182,32 @@ def csd_decompose(I, C, F):
 if __name__ == "__main__":
     cases = [
         (
-            "F moves exactly along reference direction "
+            "F moves exactly along reference axis "
             "(expect aligned_normalized=1, residual_normalized=0)",
             (0, 0),   # I
-            (1, 0),   # C  -> reference direction is +x
+            (1, 0),   # C  -> reference axis is +x
             (2, 0),   # F  -> moved straight along +x, past C
         ),
         (
-            "F moves exactly perpendicular to reference direction "
+            "F moves exactly perpendicular to reference axis "
             "(expect aligned_normalized=0, residual_normalized=1)",
             (0, 0),   # I
-            (1, 0),   # C  -> reference direction is +x
+            (1, 0),   # C  -> reference axis is +x
             (0, 3),   # F  -> moved straight along +y
         ),
         (
-            "F moves at 45 degrees to reference direction "
+            "F moves at 45 degrees to reference axis "
             "(expect aligned_normalized=residual_normalized~0.707)",
             (0, 0),   # I
-            (1, 0),   # C  -> reference direction is +x
+            (1, 0),   # C  -> reference axis is +x
             (1, 1),   # F  -> moved equally along +x and +y
         ),
         (
-            "F moves along reference direction with negative sign "
+            "F moves along reference axis with negative sign "
             "(expect aligned_signed_normalized=-1, aligned_normalized=1, "
             "residual_normalized=0)",
             (0, 0),    # I
-            (1, 0),    # C  -> reference direction is +x
+            (1, 0),    # C  -> reference axis is +x
             (-1, 0),   # F  -> moved straight along -x, away from C
         ),
         (
@@ -215,7 +215,7 @@ if __name__ == "__main__":
             "perpendicular (expect aligned_signed_normalized=-0.707, "
             "aligned_normalized=0.707, residual_normalized=0.707)",
             (0, 0),    # I
-            (1, 0),    # C  -> reference direction is +x
+            (1, 0),    # C  -> reference axis is +x
             (-1, 1),   # F  -> moved -x and +y
         ),
         (
@@ -226,7 +226,7 @@ if __name__ == "__main__":
             (1, 1),   # F  -> same as I
         ),
         (
-            "Reference direction undefined: C == I (expect "
+            "Reference axis undefined: C == I (expect "
             "status=reference_undefined, decomposition=nan)",
             (0, 0),   # I
             (0, 0),   # C  -> same as I
